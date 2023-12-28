@@ -1,0 +1,287 @@
+/* Your SCSS here. */
+$section-background: rgba(189, 165, 185, 0.5);
+$font-color: rgb(248, 242, 247);
+
+//Navbar CSS
+header {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  h1 {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin-right: 20px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+}
+
+nav a {
+  text-decoration: none;
+  color: $font-color;
+  transition: font-size 0.3s ease;
+}
+
+nav a.active {
+  color: rgba(189, 165, 185);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+//Section 1 CSS
+#section1 {
+  //background-color: #b0e0e6;
+  margin-top: 20px;
+  position: relative;
+  height: 600px;
+  margin-bottom: 20px;
+}
+
+.section1_content {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  background-color: $section-background;
+  border-radius: 25px;
+  color: $font-color;
+  p {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  #pic_of_me {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+}
+
+.icons {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+//section 2 css
+#section2 {
+  padding: 20px;
+  height: 400px;
+  text-align: center;
+  background-color: $section-background;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 25px;
+  color: $font-color;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px;
+  color: black;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 30px;
+  text-align: center;
+  background-color: #f1f1f1c0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: $font-color;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    cursor: pointer;
+  }
+}
+#section3 {
+  height: 600px;
+  position: relative;
+}
+.section3_content {
+  padding: 20px;
+  text-align: center;
+  background-color: $section-background;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 25px;
+  color: $font-color;
+  top: 12%;
+  position: relative;
+}
+// begin carousel
+.carousel-container {
+  width: 100%;
+  height: 350px; /* Adjust height as needed */
+  position: relative;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+  p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  img,
+  video {
+    width: 100%;
+    height: 100%;
+    width: 550px;
+    height: 240px;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 3s;
+}
+
+#prevBtn,
+#nextBtn {
+  width: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $font-color;
+  position: absolute;
+}
+
+#prevBtn {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+#nextBtn {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.button:hover {
+  color: white;
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#section4 {
+  background-color: $section-background;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-bottom: 70px;
+}
+
+.section4_content {
+  color: $font-color;
+  text-align: center;
+  padding: 20px;
+}
+
+.activity {
+  background-color: rgba(99, 77, 95, 0.8);
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: rgb(193, 159, 212);
+  }
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  ul {
+    margin-top: 0;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: rgb(185, 147, 160);
+  height: 100px;
+}
+
+body {
+  margin: 0;
+  background-image: url("/assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

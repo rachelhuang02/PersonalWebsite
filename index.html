@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP1</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div id="navbar-content">
+          <h1><a href="#section1">Rachel Huang</a></h1>
+          <ul>
+            <li><a href="#section2">Experience</a></li>
+            <li><a href="#section3">Projects</a></li>
+            <li><a href="#section4">Leadership</a></li>
+            <li><a href="#foot">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="section1">
+      <div class="section1_content">
+        <h1></h1>
+        <img id="pic_of_me" src="assets/me.jpg" />
+        <h1>Hi I'm Rachel!!</h1>
+        <h3>
+          rhuang25@illinois.edu <br />
+          <a target="_blank" href="https://www.linkedin.com/in/rachelhuang02/">
+            <img class="icons" src="assets/icons8-linkedin.svg"
+          /></a>
+          <a target="_blank" href="https://github.com/rachelhuang02">
+            <img class="icons" src="assets/icons8-github.svg"
+          /></a>
+        </h3>
+        <p>
+          Hi! I'm Rachel and I am a senior studying computer science at UIUC
+          from Wheaton, Illinois. Some of my hobbies include running, thrifting,
+          and traveling.
+        </p>
+      </div>
+    </section>
+    <section class="main" id="section2">
+      <h1>Work Experience</h1>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <h2>Uber</h2>
+            <h3>Software Engineering Intern</h3>
+            <p>May 2023 - August 2023</p>
+            <button id="uberBtn">Learn More!</button>
+            <div id="uberModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span id="uberClose" class="close">&times;</span>
+                <h2>Uber</h2>
+                <h3>Software Engineering Intern</h3>
+                <p>May 2023 - August 2023</p>
+                <p>
+                  I optimized Risk engineering’s Flink based streaming
+                  computation platform by adding windowing support, which
+                  reduces data from Kafka topics that are hundreds of thousands
+                  of QPS to around 10 QPS. This was used by multiple pipelines
+                  to perform different aggregation functions. This project was
+                  important because it removed the need for AthenaX queries and
+                  intermediate topics from the team’s architecture, which saves
+                  engineering resources, simplifies the debugging process, and
+                  reduces cost
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h2>Principal Financial</h2>
+            <h3>Software Engineering Intern</h3>
+            <p>May 2022 - August 2022</p>
+            <button id="pfgBtn">Learn More!</button>
+            <div id="pfgModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span id="pfgClose" class="close">&times;</span>
+                <h2>Principal Financial</h2>
+                <h3>Software Engineering Intern</h3>
+                <p>May 2022 - August 2022</p>
+                <p>
+                  I coded an insurance policy data retrieval application, by
+                  using React to create an interactive UI that was connected to
+                  a backend using AWS Lambda functions using an API gateway.
+                  Additionally, I researched and lead a company-wide switch from
+                  Azure Pipelines to GitHub Actions by performing several
+                  pipeline migrations. Lastly, I created an onboarding hub,
+                  which was a centralized website for managers to upload their
+                  onboarding processes for remote employees. This was made using
+                  React and AWS amplify.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <h2>BP</h2>
+            <h3>Software Developer Intern</h3>
+            <p>January 2022 - May 2022</p>
+            <button id="bpBtn">Learn More!</button>
+            <div id="bpModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span id="bpClose" class="close">&times;</span>
+                <h2>BP</h2>
+                <h3>Software Developer Intern</h3>
+                <p>January 2022 - May 2022</p>
+                <p>
+                  Using historical data on a given wind speed and direction for
+                  a wind farm in South Dakota, I calculated the optimal yaw
+                  misalignment angle for the wind turbines. By adjusting the
+                  wind turbine to the optimal angle, I was able to increase the
+                  total energy production by 5%.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section3">
+      <div class="section3_content">
+        <h1>Projects</h1>
+        <div class="carousel-container">
+          <button class="button" id="prevBtn">&#8592;</button>
+          <button class="button" id="nextBtn">&#8594;</button>
+          <div class="carousel-item">
+            <h3>Safe & Sound</h3>
+            <video class="fade-in" controls>
+              <source src="assets/safe.mov" />
+            </video>
+            <p>
+              Used Flutter to create an app that takes you on the safest route
+              to your destination. Utilized the Google Maps API and a crime data
+              API to calculate the safest route and Firebase store the crimes
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h3>Candy Crush Simulator</h3>
+            <video class="fade-in" controls>
+              <source src="assets/candy.mov" />
+            </video>
+            <p>
+              Used C++ and the Cinder library to create a customizable simulator
+              of the popular game Candy Crush.
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h3>Open Flights Simulator</h3>
+            <img class="fade-in" src="assets/Output.png" />
+            <p>
+              Used C++ and Djikstra's algorithm to create the a simulator that
+              finds the shortest flight with least layovers between 2 airports.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section4">
+      <div class="section4_content">
+        <h1>Leadership</h1>
+        <div class="activity">
+          <h3>Women in Computer Science - Co-President</h3>
+          <h4>May 2022 - May 2023</h4>
+          <ul>
+            <li>
+              Lead club with over 200 members and recruited around 50 committee
+              members
+            </li>
+            <li>
+              Run weekly officer meetings and officer trainings to ensure board
+              is diligent with their responsibilities
+            </li>
+            <li>
+              Represent WCS in CS leadership council and maintain positive
+              connections with other organizations
+            </li>
+          </ul>
+        </div>
+        <div class="activity">
+          <h3>Women in Computer Science - Mentoring Chair</h3>
+          <h4>May 2021 - May 2022</h4>
+          <ul>
+            <li>
+              Ran the Bits and Bytes mentoring program to help freshmen with
+              transition to college
+            </li>
+            <li>
+              Organized social events and professional events for the mentors
+              and mentees
+            </li>
+          </ul>
+        </div>
+        <div class="activity">
+          <h3>CS 125 Course Assistant</h3>
+          <h4>January 2021 - May 2022</h4>
+          <ul>
+            <li>
+              Assisted 300+ students with homework and helped them understand
+              Java fundamentals during office hours
+            </li>
+            <li>Recorded coding walkthroughs to supplement the lectures</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer id="foot">
+      <h2>Contact Me!</h2>
+      <h3>
+        rhuang25@illinois.edu <br />
+        <a target="_blank" href="https://www.linkedin.com/in/rachelhuang02/">
+          <img class="icons" src="assets/icons8-linkedin.svg"
+        /></a>
+
+        <a target="_blank" href="https://github.com/rachelhuang02">
+          <img class="icons" src="assets/icons8-github.svg"
+        /></a>
+      </h3>
+    </footer>
+  </body>
+</html>
